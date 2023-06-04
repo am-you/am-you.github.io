@@ -8,8 +8,6 @@
 
    <!-- custom css file link  -->
    <link rel="stylesheet" href="style.css">
-   <link rel="stylesheet" href="path/to/plyr.css" />
-
 
 </head>
 <body>
@@ -21,20 +19,11 @@
       <h3 class="main-vid-title">house flood animation</h3>
    </div>
 
-   <div class="video-list-container">
-
+   <div class="video-list-container">         
       <div class="list active">
-         <div class="plyr__video-embed" id="player">
-  <iframe
-    src="https://vimeo.com/833088420"
-    allowfullscreen
-    allowtransparency
-    allow="autoplay"
-  ></iframe>
-</div>
-         <h3 class="list-title">test 1 vid Cyr</h3>
+         <video src="https://vimeo.com/833088420" class="list-video"></video>
+         <h3 class="list-title">test</h3>
       </div>
-
       <div class="list">
          <video src="images/vid-2.mp4" class="list-video"></video>
          <h3 class="list-title">zoombie walking animation</h3>
@@ -81,11 +70,6 @@
 
 <!-- custom js file link  -->
 <script src="script.js"></script>
-   <script src="path/to/plyr.js"></script>
-<script>
-  const player = new Plyr('#player');
-</script>
-<script src="https://cdn.plyr.io/3.7.8/plyr.polyfilled.js"></script>
 
 </body>
 </html>
