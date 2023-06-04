@@ -79,7 +79,7 @@ body {
 	align-items: center;
 	background: #ff4757;
 	margin: 10px;
-	box-shadow: 5px 10px 2px white;
+	box-shadow: 5px 10px 2px grey;
 }
 .ltg.list {
 	display: grid;
