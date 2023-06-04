@@ -1,65 +1,89 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <title>biennale</title>
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <meta name="description" content="" />
-  <link rel="stylesheet" type="text/css" href="main.css" />
-  <link rel="icon" href="favicon.png">
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Responsive Video test</title>
+
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="css/style.css">
+
 </head>
 <body>
-	<div class="container">
-		<div class="icon">
-			<div class="list">
-				<span></span>
-				<span></span>
-				<span></span>
-			</div>
-			<div class="grid">
-				<span></span>
-				<span></span>
-				<span></span>
-				<span></span>
-			</div>
-		</div>
-		<div class="ltg">
-			<div class="column">col 1</div>
-			<div class="column">col 2</div>
-			<div class="column">col 3</div>
-			<div class="column">col 4</div>
-		</div>
-	<article class="video">
-		<figure>
-			<a class="fancybox fancybox.iframe" href="">
-			<img class="videoThumb" src=""></a>
-		</figure>
-	<h2 class="videoTitle">Mesopotamia</h2>
-  </article>
-	</div>
-  <script type="text/javascript" src="app.js"></script>
-	
-    <script
-    src="http://code.jquery.com/jquery-3.3.1.min.js"
-    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-    crossorigin="anonymous"></script>
+   
+<div class="container">
 
-  <script src="js/jquery.fancybox.min.js"></script>
+   <div class="main-video-container">
+      <video src="images/vid-1.mp4" loop controls class="main-video"></video>
+      <h3 class="main-vid-title">house flood animation</h3>
+   </div>
 
-  <script>
-    $(document).ready(function() {
-      $('.fancybox').fancybox({
-        padding   : 0,
-        maxWidth  : '100%',
-        maxHeight : '100%',
-        width   : 560,
-        height    : 315,
-        autoSize  : true,
-        closeClick  : true,
-        openEffect  : 'elastic',
-        closeEffect : 'elastic'
-      });
-    });
-  </script>
+   <div class="video-list-container">
+
+      <div class="list active">
+         <video src="images/vid-1.mp4" class="list-video"></video>
+         <h3 class="list-title">house flood animation</h3>
+      </div>
+
+      <div class="list">
+         <video src="images/vid-2.mp4" class="list-video"></video>
+         <h3 class="list-title">zoombie walking animation</h3>
+      </div>
+
+      <div class="list">
+         <video src="images/vid-3.mp4" class="list-video"></video>
+         <h3 class="list-title">emoji falling animation</h3>
+      </div>
+
+      <div class="list">
+         <video src="images/vid-4.mp4" class="list-video"></video>
+         <h3 class="list-title">3D town animation</h3>
+      </div>
+
+      <div class="list">
+         <video src="images/vid-5.mp4" class="list-video"></video>
+         <h3 class="list-title">man chasing carrot animation</h3>
+      </div>
+
+      <div class="list">
+         <video src="images/vid-6.mp4" class="list-video"></video>
+         <h3 class="list-title">door hinge animation</h3>
+      </div>
+
+      <div class="list">
+         <video src="images/vid-7.mp4" class="list-video"></video>
+         <h3 class="list-title">poeple walking in town animation</h3>
+      </div>
+
+      <div class="list">
+         <video src="images/vid-8.mp4" class="list-video"></video>
+         <h3 class="list-title">knight chasing virus animation</h3>
+      </div>
+
+      <div class="list">
+         <video src="images/vid-9.mp4" class="list-video"></video>
+         <h3 class="list-title">3D helicopter animation</h3>
+      </div>
+
+   </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- custom js file link  -->
+<script src="js/script.js"></script>
+
 </body>
 </html>
