@@ -17,3 +17,78 @@ body {
 	height: 100%;
 	margin: 100px auto;
 }
+
+.icon {
+		width: 100px;
+		height: 40px;
+		position: absolute;
+		right: -10px;
+		display: flex;
+}
+.list,
+.grid {
+		width: 35px;
+		height: 35px;
+		position: relative;
+		cursor: pointer;
+		margin: 0 10px 0 0;
+}
+.list span {
+		width: 30px;
+		heigh: 5px;
+		background: #fff;
+		position: absolute;
+		top: 5px;
+		left: 3px;
+		
+}
+.list span:nth-child(2) {
+		top: 15px;
+}
+.list span:nth-child(23 {
+		top: 25px;
+}
+.grid span {
+	width: 10px;
+	heigh: 10px;
+	background: #fff;
+	position: absolute;
+	left: 5px;
+	top: 5px;
+}
+.grid span:nth-child(2) {
+	top: 20px;
+}
+.grid span:nth-child(3) {
+	left: 20px;
+}
+.grid span:nth-child(4) {
+	top: 20px;
+	left: 20px;
+}
+.ltg {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	margin-top: 35px;
+}
+.ltg div {
+	width: 90%;
+	height: 200px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #ff4757;
+	margin: 10px;
+	box-shadow: 5px 10px 2px
+	rgba(0,0,0,.2);
+}
+.ltg.list {
+	display: grid;
+	grid-template-columns: 1fr;
+	width: 100%;
+}
+.ltg.list div {
+	width:	95%;
+	height: 100px;
+	margin-top:	10px;
+}
