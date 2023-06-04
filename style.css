@@ -83,7 +83,7 @@ body{
 }
 
 .container .video-list-container .list.active{
-   /*background-color: #eee;*/
+   background-color: grey;
 }
 
 .container .video-list-container .list.active .list-title{
