@@ -28,7 +28,7 @@ body{
    flex:1 1 700px;
    border-radius: 5px;
    box-shadow: 0 5px 15px rgba(0,0,0,.1);
-   background-color: #fff;
+   background-color: #dbdbb7;
    padding:15px;
 }
 
@@ -49,7 +49,7 @@ body{
    overflow-y: scroll;
    border-radius: 5px;
    box-shadow: 0 5px 15px rgba(0,0,0,.1);
-   background-color: #fff;
+   background-color: #dbdbb7;
    padding:15px;
 }
 
@@ -58,7 +58,7 @@ body{
 }
 
 .container .video-list-container::-webkit-scrollbar-track{
-   background-color: #fff;
+   background-color: #dbdbb7;
    border-radius: 5px;
 }
 
@@ -87,7 +87,7 @@ body{
 }
 
 .container .video-list-container .list.active .list-title{
-   color:#fff;
+   color: #dbdbb7;
 }
 
 .container .video-list-container .list .list-video{
