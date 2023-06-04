@@ -63,7 +63,7 @@ body{
 }
 
 .container .video-list-container::-webkit-scrollbar-thumb{
-   background-color: #444;
+   background-color: #f1f1c6;
    border-radius: 5px;
 }
 
@@ -83,11 +83,11 @@ body{
 }
 
 .container .video-list-container .list.active{
-   background-color: #444;
+   background-color: #f1f1c6;
 }
 
 .container .video-list-container .list.active .list-title{
-   color: #dbdbb7;
+   color: #f1f1c6;
 }
 
 .container .video-list-container .list .list-video{
@@ -97,7 +97,7 @@ body{
 
 .container .video-list-container .list .list-title{
    font-size: 17px;
-   color:#444;
+   color:#f1f1c6;
 }
 
 
