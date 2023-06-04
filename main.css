@@ -1,166 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
 
-* {
-		padding: 0;
-		margin: 0;
-		box-sizing: border-box;
-}
-body {
-	background: #2f3542;
-	overflow: hidden;
-}
-.container {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	width: 500px;
-	height: 100%;
-	margin: 100px auto;
+*{
+   font-family: 'Poppins', sans-serif;
+   margin:0; padding:0;
+   box-sizing: border-box;
+   outline: none; border:none;
+   text-decoration: none;
+   text-transform: capitalize;
 }
 
-.icon {
-		width: 100px;
-		height: 40px;
-		position: absolute;
-		right: -10px;
-		display: flex;
+body{
+   background-color: coral;
+   padding:20px;
 }
-.list,
-.grid {
-		width: 35px;
-		height: 35px;
-		position: relative;
-		cursor: pointer;
-		margin: 0 10px 0 0;
-}
-.list span {
-		width: 30px;
-		height: 5px;
-		background: #fff;
-		position: absolute;
-		top: 5px;
-		left: 3px;
-		
-}
-.list span:nth-child(2) {
-		top: 15px;
-}
-.list span:nth-child(3) {
-		top: 25px;
-}
-.grid span {
-	width: 10px;
-	height: 10px;
-	background: #fff;
-	position: absolute;
-	left: 5px;
-	top: 5px;
-}
-.grid span:nth-child(2) {
-	top: 20px;
-}
-.grid span:nth-child(3) {
-	left: 20px;
-}
-.grid span:nth-child(4) {
-	top: 20px;
-	left: 20px;
-}
-.ltg {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	margin-top: 35px;
-}
-.ltg div {
-	width: 90%;
-	height: 200px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	background: #ff4757;
-	margin: 10px;
-	box-shadow: 5px 10px 2px grey;
-}
-.ltg.list {
-	display: grid;
-	grid-template-columns: 1fr;
-	width: 100%;
-}
-.ltg.list div {
-	width:	95%;
-	height: 100px;
-	margin-top: 10px;
-}
-/* First make sure the video thumbnail images are responsive. */
 
-  img {
-    max-width: 100%;
-    height: auto;
-  }
-  
-  /* 
-  This is the starting grid for each video with thumbnails 4 across for the largest screen size.
-  It's important to use percentages or there may be gaps on the right side of the page. 
-  */
+.container{
+   max-width: 1200px;
+   margin:100px auto;
+   display: flex;
+   flex-wrap: wrap;
+   align-items: flex-start;
+   gap:20px;
+}
 
-  .video {
-    background: #fff;
-    padding-bottom: 20px;
-    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
-    width: 23%; /* Thumbnails 4 across */
-    margin: 1%;
-    float: left;
-  }
+.container .main-video-container{
+   flex:1 1 700px;
+   border-radius: 5px;
+   box-shadow: 0 5px 15px rgba(0,0,0,.1);
+   background-color: #fff;
+   padding:15px;
+}
 
-   /* 
-   These keep the height of each video thumbnail consistent between YouTube and Vimeo.
-   Each can have thumbnail sizes that vary by 1px and are likely break your layout. 
-   */
+.container .main-video-container .main-video{
+   margin-bottom: 7px;
+   border-radius: 5px;
+   width: 100%;
+}
 
-  .video figure {
-    height: 0;
-    padding-bottom: 56.25%;
-    overflow: hidden;
+.container .main-video-container .main-vid-title{
+   font-size: 20px;
+   color:#444;
+}
 
-    .video figure a {
-      display: block;
-      margin: 0;
-      padding: 0;
-      border: none;
-      line-height: 0;
-    }
-  }
+.container .video-list-container{
+   flex:1 1 350px;
+   height: 485px;
+   overflow-y: scroll;
+   border-radius: 5px;
+   box-shadow: 0 5px 15px rgba(0,0,0,.1);
+   background-color: #fff;
+   padding:15px;
+}
 
-  /* Media Queries - This is the responsive grid. */
+.container .video-list-container::-webkit-scrollbar{
+   width: 10px;
+}
 
-  @media (max-width: 1024px) {
-    .video {
-      width: 31.333%; /* Thumbnails 3 across */
-    }
-  }
+.container .video-list-container::-webkit-scrollbar-track{
+   background-color: #fff;
+   border-radius: 5px;
+}
 
-  @media (max-width: 600px) {
-    .video {
-      width: 48%; /* Thumbnails 2 across */
-    }
-  }
+.container .video-list-container::-webkit-scrollbar-thumb{
+   background-color: #444;
+   border-radius: 5px;
+}
 
-  @media (max-width: 360px) {
-    .video {
-      display: block;
-      width: 96%; /* Single column view. */
-      margin: 2%; /* The smaller the screen, the smaller the percentage actually is. */
-      float: none;
-    }
-  }
+.container .video-list-container .list{
+   display: flex;
+   align-items: center;
+   gap:15px;
+   padding:10px;
+   background-color: #eee;
+   cursor: pointer;
+   border-radius: 5px;
+   margin-bottom: 10px;
+}
 
-  /* These are my preferred rollover styles. */
+.container .video-list-container .list:last-child{
+   margin-bottom: 0;
+}
 
-  .video img {
-    width: 100%;
-    opacity: 1;
-  }
+.container .video-list-container .list.active{
+   background-color: #444;
+}
 
-  .video img:hover, .video img:active, .video img:focus {
-    opacity: 0.75;
-  }
+.container .video-list-container .list.active .list-title{
+   color:#fff;
+}
+
+.container .video-list-container .list .list-video{
+   width: 100px;
+   border-radius: 5px;
+}
+
+.container .video-list-container .list .list-title{
+   font-size: 17px;
+   color:#444;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:1200px){
+
+   .container{
+      margin:0;
+   }
+
+}
+
+@media (max-width:450px){
+
+   .container .main-video-container .main-vid-title{
+      font-size: 15px;
+      text-align: center;
+   }
+
+   .container .video-list-container .list{
+      flex-flow: column;
+      gap:10px;
+   }
+
+   .container .video-list-container .list .list-video{
+      width: 100%;
+   }
+
+   .container .video-list-container .list .list-title{
+      font-size: 15px;
+      text-align: center;
+   }
+
+}
