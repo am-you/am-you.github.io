@@ -87,7 +87,7 @@ body{
 }
 
 .container .video-list-container .list.active .list-title{
-   /*color: #eee;*/
+   color: #eee;
 }
 
 .container .video-list-container .list .list-video{
@@ -97,7 +97,7 @@ body{
 
 .container .video-list-container .list .list-title{
    font-size: 17px;
-   /*color:#eee;*/
+   color: grey;
 }
 
 
