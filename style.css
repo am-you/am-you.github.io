@@ -138,8 +138,6 @@ nav a {
 .videocontainer iframe {
   width: 75%;
   height: 75%;
-  top: 0;
-  left: 0;
   border-radius: 10px;
   overflow: hidden;
 }
