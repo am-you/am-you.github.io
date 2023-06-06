@@ -150,7 +150,9 @@ nav a {
 }
 
 @media (max-width:450px){
-
+   h2{
+     font-size: 20px;
+   }
    .container .main-video-container .main-vid-title{
       font-size: 15px;
       text-align: center;
