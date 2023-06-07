@@ -141,6 +141,9 @@ nav a {
   border-radius: 10px;
   overflow: hidden;
 }
+..eapps-widget-toolbar {
+display: none;
+}
  /* 
   Extra small devices (phones, 600px and down) 
 */
