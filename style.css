@@ -136,12 +136,13 @@ nav a {
 }
 
 .videocontainer iframe {
-  width: 75%;
-  height: 75%;
+  width: 75vw;
+  height: 75vh;
   border-radius: 10px;
   overflow: hidden;
+  margin: 5vh;
 }
-..eapps-widget-toolbar {
+.eapps-widget-toolbar {
 display: none;
 }
  /* 
